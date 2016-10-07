@@ -1,0 +1,180 @@
+/* Variables */
+@accentColor: #0f8491;
+@lightGrey: #dedede;
+@darkGrey: #888;
+@boxShadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+
+
+body{
+    background-color: @lightGrey;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    
+    > div{
+        position: relative;
+        min-height: 100%;
+    }
+}
+
+header{ 
+    background-color: #fff;
+    box-shadow: @boxShadow;
+    height: 100px;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width:100%; 
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+
+    h1 {
+        color: @accentColor;
+        font-size: 50px;
+        margin: 25px 0;
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+    }
+
+    &.colored{
+    background-color: @accentColor;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    
+    h1 {
+        color: #fff;
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+    }
+
+    }
+}
+
+#main{
+    padding-top: 125px;
+    padding-bottom: 100px;
+    min-width: 320px;
+
+    #personnal-info{
+        text-align: center;
+
+        .photo{
+            background-image: url("../img/profile-picture.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 2px solid @accentColor;
+            border-radius: 50%;
+            box-shadow: @boxShadow;
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+
+            img{
+                display:none
+            }
+        }
+
+        h2{
+            background: @accentColor;
+            border-radius: 2px;
+            box-shadow: @boxShadow;
+            color: #fff;  
+            display: block;
+            font-size: 30px;
+            margin: 30px auto;
+            padding: 20px;
+            width: 300px;  
+        }
+    }
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: @boxShadow;
+    margin:  20px auto;
+    max-width: 600px;
+    padding: 20px;
+
+    h3{
+        color: @accentColor;
+        font-size: 25px;
+    }
+
+    .simple-list{
+        margin: 10PX 0; 
+        >li{
+            display: block;
+            clear: both;
+            >p{
+                font-size: 18px;
+                font-weight: 600;
+            }
+            ul{
+                li{
+                    float: left;
+                    display: block;
+                    background-color: @accentColor;
+                    border-radius: 2px;
+                    margin: 2px;
+                    padding: 5px;
+                    color: #fff;
+                }
+            }
+        }
+        >li+li{
+            padding-top: 5px;
+        }
+    }
+}
+
+.job, .school{
+    margin: 10PX 0; 
+    .title, .course{
+        font-size: 18px;
+        font-weight: 600;
+        display: inline;
+    }
+    .employer, .establishment{
+        font-size: 18px;
+        font-weight: 600;
+        color: @darkGrey;
+        display: inline;
+        
+        &:before{
+            content: ' | ';
+            color: @accentColor;
+        }
+    }
+    .description{
+        white-space: pre-wrap;
+    }
+}
+#contact{
+    >div{
+        font-weight: 600;
+        margin-top: 10px;
+        line-height: 25px;
+    }
+}
+footer{
+    text-align: center;    
+
+    div{
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right:0;
+
+        .copyright{
+            color: @darkGrey;
+            font-size: 10px; 
+            margin: 20px 0;  
+            width: 100%;
+        }
+    }
+}
+
+.clear-both{
+    clear: both;
+    display: block;
+}

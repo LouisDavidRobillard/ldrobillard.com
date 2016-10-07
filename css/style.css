@@ -1,0 +1,162 @@
+/* Variables */
+body {
+  background-color: #dedede;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+body > div {
+  position: relative;
+  min-height: 100%;
+}
+header {
+  background-color: #fff;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  height: 100px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+header h1 {
+  color: #0f8491;
+  font-size: 50px;
+  margin: 25px 0;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+header.colored {
+  background-color: #0f8491;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+header.colored h1 {
+  color: #fff;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+#main {
+  padding-top: 125px;
+  padding-bottom: 100px;
+  min-width: 320px;
+}
+#main #personnal-info {
+  text-align: center;
+}
+#main #personnal-info .photo {
+  background-image: url("../img/profile-picture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid #0f8491;
+  border-radius: 50%;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+}
+#main #personnal-info .photo img {
+  display: none;
+}
+#main #personnal-info h2 {
+  background: #0f8491;
+  border-radius: 2px;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  display: block;
+  font-size: 30px;
+  margin: 30px auto;
+  padding: 20px;
+  width: 300px;
+}
+.card {
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+}
+.card h3 {
+  color: #0f8491;
+  font-size: 25px;
+}
+.card .simple-list {
+  margin: 10PX 0;
+}
+.card .simple-list > li {
+  display: block;
+  clear: both;
+}
+.card .simple-list > li > p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.card .simple-list > li ul li {
+  float: left;
+  display: block;
+  background-color: #0f8491;
+  border-radius: 2px;
+  margin: 2px;
+  padding: 5px;
+  color: #fff;
+}
+.card .simple-list > li + li {
+  padding-top: 5px;
+}
+.job,
+.school {
+  margin: 10PX 0;
+}
+.job .title,
+.school .title,
+.job .course,
+.school .course {
+  font-size: 18px;
+  font-weight: 600;
+  display: inline;
+}
+.job .employer,
+.school .employer,
+.job .establishment,
+.school .establishment {
+  font-size: 18px;
+  font-weight: 600;
+  color: #888;
+  display: inline;
+}
+.job .employer:before,
+.school .employer:before,
+.job .establishment:before,
+.school .establishment:before {
+  content: ' | ';
+  color: #0f8491;
+}
+.job .description,
+.school .description {
+  white-space: pre-wrap;
+}
+#contact > div {
+  font-weight: 600;
+  margin-top: 10px;
+  line-height: 25px;
+}
+footer {
+  text-align: center;
+}
+footer div {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+footer div .copyright {
+  color: #888;
+  font-size: 10px;
+  margin: 20px 0;
+  width: 100%;
+}
+.clear-both {
+  clear: both;
+  display: block;
+}
