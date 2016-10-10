@@ -13,6 +13,7 @@ body{
     > div{
         position: relative;
         min-height: 100%;
+        min-width: 320px;
     }
 }
 
@@ -21,7 +22,6 @@ header{
     box-shadow: @boxShadow;
     height: 100px;
     position: fixed;
-    text-align: center;
     top: 0;
     width:100%; 
     transition: all 1s ease;
@@ -36,7 +36,7 @@ header{
         margin: 20px auto;
         img{
             position: absolute;
-            top: 0;
+            top: 5px;
             left: 0;
             width: 200px;
             transition: opacity .7s ease-in;
@@ -49,7 +49,6 @@ header{
     &.colored{
     background-color: @accentColor;
     transition: all 1s ease;
-    -webkit-transition: all .7s ease;
     
         .logo{
             img{
@@ -59,10 +58,122 @@ header{
                 &.white{ opacity: 1; }  
             }       
         }
+        nav button span{
+            background-color: #fff;
+        }
+    }
+     .overlay{
+         background-color: rgba(0,0,0,0.0);
+         bottom: 0;
+         cursor: pointer;
+         left:0;
+         position:fixed;
+         top:0;
+         z-index:9000;
+     }
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:9001;
 
+    button{
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        margin-top: 25px;
+        margin-left:20px;
+        width: 45px;
+        height: 45px;
+        position: relative;
+        z-index:2;
+
+        &:active,&:focus{
+            outline:none;
+        }
+        span{
+            font-size: 0;
+            display: block;
+            height: 6px;
+            border-radius: 3px;
+            width: 45px;
+            background-color: @accentColor;
+            position: absolute;
+            transition: .5s ease-in-out;
+        }
+
+        span:nth-child(1){
+            top:0px;
+        }
+        span:nth-child(2){
+            top:15px;
+        }
+        span:nth-child(3){
+            top:30px;
+        }
+    }
+    ul{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        overflow: hidden;
+        width: 0;
+        padding-top: 100px;
+        z-index:1;
+        transition: .5s ease-in-out;
+        
+        li{            
+            width:250px;
+            padding: 0 20px;
+            min-height: 50px;
+            line-height:50px;
+            &.section-title{
+                font-weight: 700;
+            }
+            &:not(.section-title):hover{
+                cursor: pointer;
+                background-color: rgba(0,0,0,0.1);
+            }
+            a{
+                color: @accentColor;
+            }
+        }
     }
 }
+.nav-active{
+     nav{
+        button{
+            span:nth-child(1),
+            span:nth-child(2),
+            span:nth-child(3){
+                background-color: #ff8080;
+            }
+            span:nth-child(1){
+                transform: rotateZ(-45deg) rotateY(180deg) translate(5px, 4px);
+                width: 25px;
+            }
+            span:nth-child(2){
+                transform: rotateY(180deg);
+            }
+            span:nth-child(3){
+                transform: rotateZ(45deg) rotateY(180deg) translate(5px, -4px);
+                width: 25px;
+            }
+        }
+        ul{
+            width:250px;
+            transition: .5s ease-in-out;
+        }
+     }
+     .overlay{
+         right:0;
+         background-color: rgba(0,0,0,0.7);
+     }
 
+}
 #main{
     padding-top: 125px;
     padding-bottom: 100px;
