@@ -58,15 +58,15 @@ header.colored nav button span {
   background-color: #fff;
 }
 header .overlay {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #000;
   bottom: 0;
   cursor: pointer;
   left: 0;
+  opacity: 0;
   position: fixed;
   top: 0;
   right: 0;
   z-index: -1;
-  transition: background-color 0.5s esase-in;
 }
 nav {
   position: absolute;
@@ -158,7 +158,8 @@ nav ul li a {
 }
 .nav-active .overlay {
   z-index: 9000;
-  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in;
 }
 #main {
   padding-top: 125px;
