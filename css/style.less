@@ -24,6 +24,7 @@ header{
     position: fixed;
     top: 0;
     width:100%; 
+    z-index: 1;
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
 
@@ -69,7 +70,9 @@ header{
          left:0;
          position:fixed;
          top:0;
-         z-index:9000;
+         right: 0;
+         z-index:-1;
+         transition: background-color 0.5s esase-in;
      }
 }
 nav{
@@ -169,7 +172,7 @@ nav{
         }
      }
      .overlay{
-         right:0;
+         z-index: 9000;
          background-color: rgba(0,0,0,0.7);
      }
 
