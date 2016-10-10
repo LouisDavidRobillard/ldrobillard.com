@@ -1,5 +1,5 @@
 </DOCTYPE! html>
-<html>
+<html ng-app="app">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <base href="/" />
 </head>
 
 <body>
@@ -27,110 +28,7 @@
             </nav>            
             <span class="overlay"  onclick="document.body.classList.remove('nav-active')"></span>
         </header>
-        <div id="main">
-            <section id="personnal-info">
-                <div class="photo">
-                    <img src="img/profile-picture.jpg" alt="Photo de profil">
-                </div>
-                <h2>Louis-David Robillard</h2>
-            </section>
-            <section id="competences" class="card">
-                <h3>Compétences informatiques</h3>
-                <ul class="simple-list">
-                    <li>
-                        <p>Languages connus</p>
-                        <ul>
-                            <li>Javascript</li>
-                            <li>C#</li>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>SQL</li>
-                            <li>Java</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <p>Frameworks connus</p>
-                        <ul>
-                            <li>AngularJS</li>
-                            <li>JQuery</li>
-                            <li>ASP.NET MVC</li>
-                            <li>ASP.NET WebAPI</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <p>Microsoft Azure</p>
-                        <ul>
-                            <li>Web app</li>
-                            <li>API app</li>
-                            <li>Application Insights</li>
-                            <li>Table Storage</li>
-                            <li>Blob Storage</li>
-                            <li>AAD B2C</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <p>Environnements de travail</p>
-                        <ul>
-                            <li>Visual Studio</li>
-                            <li>VS Code</li>
-                            <li>SQL Management Studio</li>
-                            <li>TFS</li>
-                            <li>Eclipse</li>
-                        </ul>
-                    </li>
-                </ul>
-                <span class="clear-both"></span>
-            </section>
-            <section id="experiences" class="card">
-                <h3>Expériences professionnelles</h3>
-                <ul>
-                    <li class="job">
-                        <p class="title">Développeur</p>
-                        <p class="employer">Société Grics</p>
-                        <p class="duration">2015 - En cours...</p>
-                        <pre class="description">Développement d’une applications web d’envergure et mise en place d’une architecture de micro-services et d’apis avec l’utilisation de la plateforme Microsoft Azure pour la mise en place des systèmes.
-Utilisation d’AngularJS et de ASP.NET WebAPI pour le développement de l’application. 
-Participation active à la mise en place de l'architecture de la nouvelle solution de la compagnie. 
-Référence pour les questions de frontend, particulièrement ce qui concerne AngularJS et Javascript.
-                        </pre>
-                    </li>
-                    <li class="job">
-                        <p class="title">Développeur Stagiaire</p>
-                        <p class="employer">Vidéotron</p>
-                        <p class="duration">2015 (10 semaines)</p>
-                        <pre class="description">Mise en place d’une interface pour un système de monitoring en utilisant des composantes Telerik et ASP.NET WebForm.
-                        </pre>
-                    </li>
-                    <li class="job">
-                        <p class="title">Spécialiste des ventes</p>
-                        <p class="employer">Best Buy</p>
-                        <p class="duration">2014 - 2015</p>
-                    </li>
-                </ul>
-            </section>
-            <section id="scholarships" class="card">
-                <h3>Formations</h3>
-                <ul>
-                    <li class="school">
-                        <p class="course">Diplôme en Techniques d'informatique de gestion</p>
-                        <p class="establishment">Collège de Maisonneuve</p>
-                        <p class="duration">2015</p>
-                    </li>
-                    <li class="school">
-                        <p class="course">Diplôme d'études secondaires</p>
-                        <p class="establishment">École P.G.-Ostiguy</p>
-                        <p class="duration">2012</p>
-                    </li>
-                </ul>
-            </section>
-            <section id="contact" class="card">
-                <h3>Pour me rejoindre</h3>
-                <div>
-                    <p><a href="mailto:louis-david2@hotmail.com">louis-david2@hotmail.com</a></p>
-                    <p>438-395-5766</p>
-                </div>
-            </section>
-        </div>
+        <div id="main" ng-view></div>
         <footer>
             <div>
                 <div class="copyright">
@@ -139,7 +37,15 @@ Référence pour les questions de frontend, particulièrement ce qui concerne An
             </div>
         </footer>
     </div>
+    <!-- Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+    
+    <!-- Page scripts -->
     <script src="main.js"></script>
+    
+    <!-- App -->
+    <script src="dist/app.min.js"></script>
 </body>
 
 </html>
