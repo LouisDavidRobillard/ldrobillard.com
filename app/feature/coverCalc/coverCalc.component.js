@@ -10,7 +10,7 @@
             bindings: {
             },
             controller: CoverCalcController,
-            templateUrl: 'app/features/coverCalc/coverCalc.html'
+            templateUrl: 'app/feature/coverCalc/coverCalc.html'
         }
         return component;
     };

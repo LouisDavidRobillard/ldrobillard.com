@@ -1,9 +1,8 @@
 (function () {
     'use strict'
+    //document.getElementById('copyright-date').innerHTML = new Date().getFullYear();
 
-    document.getElementById('copyright-date').innerHTML = new Date().getFullYear();
-
-    window.onscroll = documentScrolling;
+    //window.onscroll = documentScrolling;
 
     /////////////////
     //

@@ -61,12 +61,12 @@ header .overlay {
   background-color: #000;
   bottom: 0;
   cursor: pointer;
-  left: 0;
   opacity: 0;
   position: fixed;
   top: 0;
   right: 0;
   z-index: -1;
+  width: 0;
 }
 nav {
   position: absolute;
@@ -134,7 +134,11 @@ nav ul li:not(.section-title):hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 nav ul li a {
+  display: block;
+  width: 100%;
+  line-height: 50px;
   color: #0f8491;
+  text-decoration: none;
 }
 .nav-active nav button span:nth-child(1),
 .nav-active nav button span:nth-child(2),
@@ -158,6 +162,7 @@ nav ul li a {
 }
 .nav-active .overlay {
   z-index: 9000;
+  width: 100%;
   opacity: 0.7;
   transition: opacity 0.5s ease-in;
 }
@@ -284,4 +289,7 @@ footer div .copyright {
 .clear-both {
   clear: both;
   display: block;
+}
+ld-cover-calc canvas {
+  background: #fff;
 }

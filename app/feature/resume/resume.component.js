@@ -15,9 +15,14 @@
         return component;
     };
 
-    ResumeController.$inject = [];
+    ResumeController.$inject = ['$element'];
 
-    function ResumeController() {
+    function ResumeController($element) {
         var ctrl = this;
+        ctrl.fullpageOptions = {
+            navigation: true,
+            navigationPosition: 'right'
+        }
     }
+
 })();

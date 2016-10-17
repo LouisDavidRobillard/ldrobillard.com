@@ -1,51 +1,77 @@
 </DOCTYPE! html>
-<html ng-app="app">
+<html ng-app="app" lang="fr-ca">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Louis-David Robillard</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <base href="/" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>LD Robillard</title>
+
+	<base href="/" />
+
+	<meta name="description" content="Site web de Louis-David Robillard. Résumé professionnel, Curriculum Vitae, projets et expériences web en démonstration.">
+
+	<meta name="robots" content="index,follow,noodp">
+	<meta name="googlebot" content="index,follow">
+	<meta name="google" content="nositelinkssearchbox">
+	<meta name="google" content="notranslate">
+
+	<meta name="subject" content="CV, expériences web, projets personnels">
+	<meta name="url" content="https://ldrobillard.com/">
+	<meta name="rating" content="General">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.7/jquery.fullPage.min.css">
+	<link rel="stylesheet" href="css/style.v2.css">
 </head>
 
 <body>
-    <div>
-        <header>
+	<div>
+		<!--<header>
             <h1>LDRobillard.com</h1>
             <div class="logo">
-                <img class="normal" src="img/logo.png" alt="Logo"/>
-                <img class="white" src="img/logo_white.png" alt="Logo"/>
+                <a href="/">
+                    <img class="normal" src="img/logo.png" alt="Logo"/>
+                    <img class="white" src="img/logo_white.png" alt="Logo"/>
+                </a>
             </div>
             <nav>
                 <button onclick="document.body.classList.toggle('nav-active')"><span>Afficher la navigation</span><span></span><span></span></button>
                 <ul>
+                    <li><a href="/">Accueil</a></li>
                     <li class="section-title">Projets et autres</li>
-                    <li><a>Calculateur de revêtement</a></li>
+                    <li><a href="/calculateur">Calculateur de revêtement</a></li>
                 </ul>
             </nav>            
             <span class="overlay"  onclick="document.body.classList.remove('nav-active')"></span>
-        </header>
-        <div id="main" ng-view></div>
-        <footer>
+        </header>-->
+		<div id="main" ng-view></div>
+		<!--<footer>
             <div>
                 <div class="copyright">
                     <p>Tous droits réservés par l'auteur. ©<span id="copyright-date"></span></p>
                 </div>
             </div>
-        </footer>
-    </div>
-    <!-- Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+        </footer>-->
+	</div>
+	<!-- Libraries -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.7/jquery.fullPage.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
     
-    <!-- Page scripts -->
-    <script src="main.js"></script>
-    
-    <!-- App -->
-    <script src="dist/app.min.js"></script>
+	<script type="text/javascript" src="node_modules\angular-fullpage.js\angular-fullpage.min.js"></script>
+
+
+	<!-- Page scripts -->
+	<script src="main.js"></script>
+
+	<!-- App -->
+	<script src="dist/app.min.js"></script>
 </body>
 
 </html>

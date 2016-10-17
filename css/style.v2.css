@@ -1,0 +1,126 @@
+/* Imports */
+@import "reset.css";
+@import "button.css";
+/* Variables */
+body {
+  background-color: #f0f0f0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  min-width: 320px;
+}
+.section {
+  padding: 30px;
+}
+.section .section-content {
+  border: 1px solid lightgrey;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  padding: 0.2em 1em 3em 1em;
+  position: relative;
+}
+.section .section-content .btn-show-next {
+  border: none;
+  content: '';
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  position: absolute;
+  display: block;
+  bottom: -31px;
+  left: calc(50% - 31px);
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+.section .section-content .btn-show-next > span {
+  display: none;
+}
+.section .section-content .btn-show-next:before {
+  border: 1px solid lightgrey;
+  color: lightgrey;
+  content: "\f107";
+  font-family: 'FontAwesome';
+  font-size: 4em;
+  font-weight: lighter;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  display: block;
+  top: 5px;
+  left: 5px;
+}
+.section .section-content .btn-show-next:hover:before {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.section .section-title {
+  background: #f0f0f0;
+  color: lightgrey;
+  display: inline-block;
+  font-size: 2em;
+  margin-top: -0.7em;
+  padding: 0.2em 1em;
+}
+.photo img {
+  width: 200px;
+  border-radius: 50%;
+}
+/* Competences */
+#competences .simple-list > li {
+  margin-bottom: 10px;
+}
+#competences .simple-list > li > p {
+  font-weight: 600;
+}
+#competences .float-list {
+  margin: 0 auto;
+}
+#competences .float-list > li {
+  display: inline-block;
+  padding: 4px;
+  margin: 0 2px;
+  border: 1px solid lightgrey;
+}
+/* Experiences */
+#experiences .job + .job {
+  margin-top: 20px;
+}
+#experiences .job .title,
+#experiences .job .employer {
+  display: inline-block;
+}
+#experiences .job .title {
+  font-weight: 600;
+}
+#experiences .job .title::after {
+  content: ' - ';
+  display: inline;
+}
+#experiences .job .description {
+  text-align: justify;
+  color: #444;
+}
+/* Scholarship */
+#scholarship .school + .school {
+  margin-top: 20px;
+}
+#scholarship .school .course {
+  font-weight: 600;
+}
+/* Contact */
+#contact p {
+  padding: 5px;
+}
+#contact .linkedin-link::before {
+  content: "\f08c";
+  font-family: 'FontAwesome';
+  font-size: 1em;
+  display: inline;
+  text-decoration: none;
+  color: #0077b5;
+}
+.back-to-top {
+  margin: 0 auto;
+  margin-top: 100px;
+}

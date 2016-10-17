@@ -6,11 +6,12 @@
         'ngRoute',
 
         // Features 
-        'app.resume'
+        'app.resume',
+        'app.coverCalc',
 
         // General Components
 
         // 3rd Party Modules
-        
+        'fullPage.js'
     ]);
 })();

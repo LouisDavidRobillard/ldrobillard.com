@@ -1,0 +1,166 @@
+/* Imports */
+@import "reset.css";
+@import "button.css";
+
+/* Variables */
+@accentColor: #0f8491;
+@bgGrey: #f0f0f0;
+@lightGrey: lightgrey;
+@darkGrey: #888;
+
+@boxShadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+
+
+body{
+    background-color: @bgGrey;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    min-width: 320px;
+}
+
+.section{
+    padding: 30px;
+
+    .section-content{
+        border: 1px solid @lightGrey;
+        margin: 0 auto;
+        max-width: 800px;
+        text-align: center;
+        padding: 0.2em 1em 3em 1em;
+        position: relative;
+
+        .btn-show-next{
+            border: none;
+            content: '';
+            width: 62px;
+            height: 62px;
+            border-radius: 50%;
+            position: absolute;
+            display: block;
+            bottom: -31px;
+            left: ~"calc(50% - 31px)";
+            background-color: @bgGrey;
+            cursor: pointer;
+            
+            > span{
+                display: none;
+            } 
+
+            &:before{
+                border: 1px solid @lightGrey;
+                color: @lightGrey;
+                content: "\f107";
+                font-family: 'FontAwesome';
+                font-size: 4em;
+                font-weight: lighter;
+                line-height: 50px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                position: absolute;
+                display: block;
+                top: 5px;
+                left: 5px;
+            } 
+
+            &:hover:before{
+                background-color: rgba(0, 0, 0, 0.05);
+            }
+        } 
+    }
+
+    .section-title {
+        background: @bgGrey;
+        color: @lightGrey;
+        display: inline-block;
+        font-size: 2em;
+        margin-top: -0.7em;
+        padding: 0.2em 1em;
+    }
+}
+
+
+.photo img{
+    width: 200px;
+    border-radius: 50%;
+    
+}
+
+/* Competences */
+#competences{
+    .simple-list >li{
+        margin-bottom: 10px;
+
+        >p{
+            font-weight: 600;
+        }
+    }
+    .float-list{
+        margin: 0 auto; 
+
+        > li{
+        display: inline-block;
+        padding: 4px;
+        margin: 0 2px;
+        border: 1px solid @lightGrey;
+        }   
+    }
+}
+
+/* Experiences */
+#experiences{
+    .job{
+        & + .job{
+            margin-top: 20px;   
+        }
+
+        .title,
+        .employer{
+            display: inline-block
+        }
+
+        .title {
+            font-weight: 600;
+
+            &::after {
+                content: ' - ';
+                display: inline;
+            }
+        }
+
+        .description {
+            text-align: justify;
+            color: #444;
+        }
+    }
+}
+/* Scholarship */ 
+#scholarship{
+    .school + .school{
+        margin-top: 20px;
+    }
+    .school .course{
+        font-weight: 600;
+    }
+} 
+
+
+/* Contact */
+#contact{
+    p{
+        padding: 5px;
+    }
+    .linkedin-link::before{
+        content: "\f08c";
+        font-family: 'FontAwesome';
+        font-size: 1em;
+        display: inline;
+        text-decoration: none;
+        color: #0077b5
+    }
+}
+
+.back-to-top{
+    margin: 0 auto;
+    margin-top: 100px;
+}
