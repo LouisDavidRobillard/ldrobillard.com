@@ -29,11 +29,16 @@ gulp.task('compress', function () {
         .pipe(rename('app.min.js'))
         .pipe(uglify())
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('dist'))
-  ;
+        .pipe(gulp.dest('dist'));
 });
 
-gulp.task('default', ['less', 'compress'], function() {
+gulp.task('copy_vendors', function () {
+        gulp.src([
+            'node_modules/angular-fullpage.js/angular-fullpage.min.js'])
+        .pipe(gulp.dest('vendor'));
+});
+
+gulp.task('default', ['less', 'copy_vendors', 'compress'], function() {
     gulp.watch('**/*.less', ['less']);
     gulp.watch('app/**/*.js', ['compress']);
 });
