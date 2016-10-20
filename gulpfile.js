@@ -34,9 +34,11 @@ gulp.task('compress', function () {
 
 gulp.task('copy_vendors', function () {
         gulp.src([
-            'node_modules/angular-fullpage.js/angular-fullpage.min.js',
             'node_modules/angular/angular.min.js',
-            'node_modules/angular/angular.min.js.map'
+            'node_modules/angular/angular.min.js.map',
+            'node_modules/angular-fullpage.js/angular-fullpage.min.js',
+            'node_modules/fullpage.js/dist/jquery.fullpage.min.css',
+            'node_modules/fullpage.js/dist/jquery.fullpage.min.css.map'
             ])
         .pipe(gulp.dest('vendor'));
 });
