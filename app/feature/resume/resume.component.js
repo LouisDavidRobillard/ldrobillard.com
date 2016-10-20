@@ -20,9 +20,13 @@
     function ResumeController($element) {
         var ctrl = this;
         ctrl.fullpageOptions = {
-            navigation: true,
-            navigationPosition: 'right'
+            menu: '#menu',
+            anchors: ['section_1', 'section_2', 'section_3', 'section_4', 'section_5'],
+            lockAnchors: true
         }
+
+        ////////////////
+        //
     }
 
 })();

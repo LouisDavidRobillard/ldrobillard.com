@@ -16,55 +16,52 @@ body {
   margin: 0 auto;
   max-width: 800px;
   text-align: center;
-  padding: 0.2em 1em 3em 1em;
+  padding: 1em;
   position: relative;
-}
-.section .section-content .btn-show-next {
-  border: none;
-  content: '';
-  width: 62px;
-  height: 62px;
-  border-radius: 50%;
-  position: absolute;
-  display: block;
-  bottom: -31px;
-  left: calc(50% - 31px);
-  background-color: #f0f0f0;
-  cursor: pointer;
-}
-.section .section-content .btn-show-next > span {
-  display: none;
-}
-.section .section-content .btn-show-next:before {
-  border: 1px solid lightgrey;
-  color: lightgrey;
-  content: "\f107";
-  font-family: 'FontAwesome';
-  font-size: 4em;
-  font-weight: lighter;
-  line-height: 50px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  position: absolute;
-  display: block;
-  top: 5px;
-  left: 5px;
-}
-.section .section-content .btn-show-next:hover:before {
-  background-color: rgba(0, 0, 0, 0.05);
 }
 .section .section-title {
   background: #f0f0f0;
   color: lightgrey;
   display: inline-block;
   font-size: 2em;
-  margin-top: -0.7em;
+  margin-top: -1.2em;
   padding: 0.2em 1em;
 }
-.photo img {
-  width: 200px;
+#menu {
+  position: fixed;
+  right: 23px;
+  top: 50%;
+  z-index: 10;
+}
+#menu li {
+  height: 16px;
+  width: 15px;
+  padding: 0;
+}
+#menu li a {
+  cursor: pointer;
+  height: 6px;
+  width: 6px;
   border-radius: 50%;
+  background-color: #888;
+  display: block;
+  margin: 5px auto;
+  transition: all 0.5s ease-in-out;
+}
+#menu li a:hover {
+  height: 10px;
+  width: 10px;
+  margin: 5px auto;
+  transition: all 0.2s ease-in-out;
+}
+#menu li.active a {
+  height: 12px;
+  width: 12px;
+  margin: 2px auto;
+}
+.photo img {
+  border-radius: 50%;
+  width: 200px;
 }
 /* Competences */
 #competences .simple-list > li {
@@ -77,10 +74,10 @@ body {
   margin: 0 auto;
 }
 #competences .float-list > li {
+  border: 1px solid lightgrey;
   display: inline-block;
   padding: 4px;
   margin: 0 2px;
-  border: 1px solid lightgrey;
 }
 /* Experiences */
 #experiences .job + .job {
@@ -98,8 +95,8 @@ body {
   display: inline;
 }
 #experiences .job .description {
-  text-align: justify;
   color: #444;
+  text-align: justify;
 }
 /* Scholarship */
 #scholarship .school + .school {
@@ -113,12 +110,12 @@ body {
   padding: 5px;
 }
 #contact .linkedin-link::before {
+  color: #0077b5;
   content: "\f08c";
+  display: inline;
   font-family: 'FontAwesome';
   font-size: 1em;
-  display: inline;
   text-decoration: none;
-  color: #0077b5;
 }
 .back-to-top {
   margin: 0 auto;

@@ -34,7 +34,10 @@ gulp.task('compress', function () {
 
 gulp.task('copy_vendors', function () {
         gulp.src([
-            'node_modules/angular-fullpage.js/angular-fullpage.min.js'])
+            'node_modules/angular-fullpage.js/angular-fullpage.min.js',
+            'node_modules/angular/angular.min.js',
+            'node_modules/angular/angular.min.js.map'
+            ])
         .pipe(gulp.dest('vendor'));
 });
 
