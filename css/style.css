@@ -13,11 +13,122 @@ body {
     font-size: 14px;
   }
 }
+.overlay {
+  background-color: #000;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+nav {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 9001;
+}
+nav > button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  height: 45px;
+  margin-left: 20px;
+  margin-top: 25px;
+  position: relative;
+  width: 45px;
+  z-index: 2;
+}
+nav > button:active,
+nav > button:focus {
+  outline: none;
+}
+nav > button span {
+  background-color: #0f8491;
+  border-radius: 3px;
+  display: block;
+  font-size: 0;
+  height: 6px;
+  position: absolute;
+  width: 45px;
+  transition: 0.7s ease-in-out;
+}
+nav > button span:nth-child(1) {
+  top: 0px;
+}
+nav > button span:nth-child(2) {
+  top: 15px;
+}
+nav > button span:nth-child(3) {
+  top: 30px;
+}
+nav ul {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #0f8491;
+  overflow: hidden;
+  width: 0;
+  padding-top: 100px;
+  z-index: 1;
+  transition: 0.5s ease-in-out;
+}
+nav ul li {
+  width: 250px;
+  padding: 0 20px;
+  min-height: 50px;
+  line-height: 50px;
+}
+nav ul li.section-title {
+  font-weight: 700;
+}
+nav ul li:not(.section-title):hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+nav ul li a {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+.nav-active nav button span:nth-child(1),
+.nav-active nav button span:nth-child(2),
+.nav-active nav button span:nth-child(3) {
+  background-color: #fff;
+}
+.nav-active nav button span:nth-child(1) {
+  width: 50px;
+  top: 15px;
+  transform: rotateZ(-45deg) rotateY(180deg);
+}
+.nav-active nav button span:nth-child(2) {
+  transform: rotateY(90deg);
+}
+.nav-active nav button span:nth-child(3) {
+  width: 50px;
+  top: 15px;
+  transform: rotateZ(45deg) rotateY(180deg);
+}
+.nav-active nav ul {
+  width: 250px;
+  transition: 0.5s ease-in-out;
+}
+.nav-active .overlay {
+  z-index: 9000;
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in;
+}
 .section {
   padding: 30px;
 }
 .section .section-content {
-  border: 1px solid lightgrey;
+  border: 1px solid #0f8491;
   margin: 0 auto;
   max-width: 800px;
   padding: 1em;
@@ -26,7 +137,7 @@ body {
 }
 .section .section-title {
   background: #f0f0f0;
-  color: lightgrey;
+  color: #0f8491;
   display: inline-block;
   font-size: 2em;
   margin-top: -1.2em;
@@ -44,7 +155,7 @@ body {
   width: 15px;
 }
 #menu li a {
-  background-color: #888;
+  background-color: #0f8491;
   border-radius: 50%;
   cursor: pointer;
   display: block;
@@ -64,6 +175,10 @@ body {
   margin: 2px auto;
   width: 12px;
 }
+.plain-page {
+  padding: 75px 40px 0 40px;
+}
+/* Profil */
 .photo img {
   border-radius: 50%;
   width: 200px;

@@ -5,6 +5,9 @@
   display: block;
 }
 .btn.link {
-  text-decoration: underline;
   color: blue;
+  text-decoration: none;
+}
+.btn.link:hover {
+  text-decoration: underline;
 }

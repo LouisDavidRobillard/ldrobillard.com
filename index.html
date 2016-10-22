@@ -29,7 +29,19 @@
 
 <body>
 	<div>
+		<nav>
+			<button onclick="body.classList.toggle('nav-active')">
+				<span>Afficher le menu</span>
+				<span></span>
+				<span></span>
+			</button>
+			<ul>
+				<li><a href="/">Accueil</a></li>
+				<li><a href="/controls">Contrôles</a></li>
+			</ul>
+		</nav>
 		<div id="main" ng-view></div>
+		<span class="overlay" onclick="document.body.classList.remove('nav-active')"></span>
 	</div>
 	<!-- Libraries -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -38,7 +50,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
-    
+
 	<script type="text/javascript" src="vendor\angular-fullpage.min.js"></script>
 
 

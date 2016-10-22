@@ -8,6 +8,7 @@
         // Features 
         'app.resume',
         'app.coverCalc',
+        'app.controls',
 
         // General Components
 

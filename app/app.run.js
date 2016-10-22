@@ -10,7 +10,7 @@
     function run($rootScope) {
         $rootScope.$on('$routeChangeSuccess', function (event, current) {
             $rootScope.pageTitle = current.pageTitle;
-            $rootScope.currentModule = current.module;
+            document.body.classList.remove('nav-active');
         });
     }
 })();
