@@ -124,6 +124,23 @@ nav ul li a {
   opacity: 0.7;
   transition: opacity 0.5s ease-in;
 }
+.card {
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+}
+.card h2 {
+  color: #0f8491;
+  font-size: 2.5em;
+  padding-bottom: 20px;
+}
+.card h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
 .section {
   padding: 30px;
 }
@@ -240,4 +257,15 @@ nav ul li a {
 .back-to-top {
   margin: 0 auto;
   margin-top: 100px;
+}
+/*
+ *  CONTROLES
+ */
+ld-controls #buttons .btn {
+  float: left;
+  margin: 5px;
+}
+ld-controls #buttons h3 {
+  padding-top: 15px;
+  clear: both;
 }

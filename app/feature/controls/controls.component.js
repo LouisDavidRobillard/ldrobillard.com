@@ -19,5 +19,16 @@
 
     function ControlsController() {
         var ctrl = this;
+        ctrl.colors = [
+            'default',
+            'red',
+            'pink',
+            'purple',
+            'blue',
+            'green',
+            'yellow',
+            'orange',
+            'grey'
+        ];
     }
 })();

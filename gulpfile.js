@@ -20,9 +20,7 @@ gulp.task('less', function() {
 gulp.task('compress', function () {
         gulp.src([
             'app/**/*.module.js',
-            'app/**/*.route.js',
-            'app/**/*.run.js',
-            'app/**/*.component.js'])
+            'app/**/*.js'])
         .pipe(sourcemaps.init())
         .pipe(concat('concat.js'))
         .pipe(gulp.dest('dist'))
