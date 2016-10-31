@@ -11,13 +11,15 @@
         $routeProvider
             .when('/', {
                 pageTitle: 'Accueil',
-                module: 'resume',
                 template: '<ld-resume></ld-resume>',
             })
             .when('/calculateur', {
                 pageTitle: 'Calculateur de revêtement',
-                module: 'cover-calculator',
                 template: '<ld-cover-calc></ld-cover-calc>'
+            })
+            .when('/controls', {
+                pageTitle: 'Contrôles',
+                template: '<ld-controls></ld-controls>'
             })
             .otherwise({
                 redirectTo: '/'

@@ -20,20 +20,28 @@ gulp.task('less', function() {
 gulp.task('compress', function () {
         gulp.src([
             'app/**/*.module.js',
-            'app/**/*.route.js',
-            'app/**/*.run.js',
-            'app/**/*.component.js'])
+            'app/**/*.js'])
         .pipe(sourcemaps.init())
         .pipe(concat('concat.js'))
         .pipe(gulp.dest('dist'))
         .pipe(rename('app.min.js'))
         .pipe(uglify())
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('dist'))
-  ;
+        .pipe(gulp.dest('dist'));
 });
 
-gulp.task('default', ['less', 'compress'], function() {
+gulp.task('copy_vendors', function () {
+        gulp.src([
+            'node_modules/angular/angular.min.js',
+            'node_modules/angular/angular.min.js.map',
+            'node_modules/angular-fullpage.js/angular-fullpage.min.js',
+            'node_modules/fullpage.js/dist/jquery.fullpage.min.css',
+            'node_modules/fullpage.js/dist/jquery.fullpage.min.css.map'
+            ])
+        .pipe(gulp.dest('vendor'));
+});
+
+gulp.task('default', ['less', 'copy_vendors', 'compress'], function() {
     gulp.watch('**/*.less', ['less']);
     gulp.watch('app/**/*.js', ['compress']);
 });

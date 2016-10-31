@@ -1,0 +1,30 @@
+<div class="plain-page">
+    <div id="buttons" class="card">
+        <h2>Boutons</h2>
+        <div>
+            <h3>Normal</h3>
+            <button ng-repeat="color in $ctrl.colors" class="btn" ng-class="color">
+                {{color}}
+            </button>
+        </div>
+        <div>
+            <h3>Normal with ripple effect</h3>
+            <button ng-repeat="color in $ctrl.colors" ld-ripple-effect class="btn" ng-class="color">
+                {{color}}
+            </button>
+        </div>
+        <div>
+            <h3>Flat</h3>
+            <button ng-repeat="color in $ctrl.colors" class="btn flat" ng-class="color">
+                {{color}}
+            </button>
+        </div>
+        <div>
+            <h3>Flat with ripple effect</h3>
+            <button ng-repeat="color in $ctrl.colors" ld-ripple-effect class="btn flat" ng-class="color">
+                {{color}}
+            </button>
+        </div>
+        <span style="display:block;clear:both"></span>
+    </div>
+</div>
