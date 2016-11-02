@@ -269,3 +269,11 @@ ld-controls #buttons h3 {
   padding-top: 15px;
   clear: both;
 }
+ld-controls code {
+  clear: both;
+  display: block;
+  background-color: #262626;
+  color: #fff;
+  margin: 5px;
+  padding: 5px 10px;
+}
