@@ -1,126 +1,156 @@
-<div>
-	<ul id="menu">
-		<li data-menuanchor="section_1"><a></a></li>
-		<li data-menuanchor="section_2"><a></a></li>
-		<li data-menuanchor="section_3"><a></a></li>
-		<li data-menuanchor="section_4"><a></a></li>
-		<li data-menuanchor="section_5"><a></a></li>
-	</ul>
-	<div full-page options="$ctrl.fullpageOptions">
-		<div class="section" id="profile">
-			<div class="section-content">
-				<h3 class="section-title">Louis-David Robillard</h3>
-				<div class="photo">
-					<img src="img/profile-picture.jpg" alt="Photo de profil">
+
+	<section data-id-section="1" id="presentation">
+		<div class="card">
+			<h3 class="card-title">Bonjour,</h3>
+			<h4 class="card-subtitle">Je m'appelle Louis-David Robillard</h4>
+			<div class="card-content">
+				<div class="profile-picture">
+					<img src="img/profile-picture-sepia.jpg" alt="Phot de profil" />
 				</div>
 			</div>
 		</div>
-		<div class="section" id="competences">
-			<div class="section-content">
-				<h3 class="section-title">Compétences informatiques</h3>
-				<ul class="simple-list">
-					<li>
-						<p>Langages connus</p>
-						<ul class="float-list">
-							<li>Javascript</li>
-							<li>C#</li>
-							<li>HTML5</li>
-							<li>CSS3</li>
-							<li>SQL</li>
-							<li>Java</li>
-						</ul>
-					</li>
-					<li>
-						<p>Frameworks connus</p>
-						<ul class="float-list">
-							<li>AngularJS</li>
-							<li>JQuery</li>
-							<li>ASP.NET MVC</li>
-							<li>ASP.NET WebAPI</li>
-						</ul>
-					</li>
-					<li>
-						<p>Microsoft Azure</p>
-						<ul class="float-list">
-							<li>Web app</li>
-							<li>API app</li>
-							<li>Application Insights</li>
-							<li>Table Storage</li>
-							<li>Blob Storage</li>
-							<li>AAD B2C</li>
-						</ul>
-					</li>
-					<li>
-						<p>Environnements de travail</p>
-						<ul class="float-list">
-							<li>Visual Studio</li>
-							<li>VS Code</li>
-							<li>SQL Management Studio</li>
-							<li>TFS</li>
-							<li>GitHub</li>
-							<li>NodeJS</li>
-							<li>Eclipse</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
+	</section>
+	<section data-id-section="2">
+		<div class="card">
+			<h3>Bla bla à propos de moi</h3>
 		</div>
-		<div class="section" id="experiences">
-			<div class="section-content">
-				<h3 class="section-title" v>Expériences professionnelles</h3>
+	</section>
+	<section data-id-section="3" id="competences">
+		<div class="card">
+			<h3>Compétences</h3>
+			<div class="card-content">
 				<ul>
-					<li class="job">
-						<p class="title">Développeur</p>
-						<p class="employer">Société Grics</p>
-						<p class="duration">2015 - En cours...</p>
-						<p class="description">Développement d’une applications web d’envergure et mise en place d’une architecture de micro-services et d’apis avec
-							l’utilisation de la plateforme Microsoft Azure pour la mise en place des systèmes. Utilisation d’AngularJS et de ASP.NET
-							WebAPI pour le développement de l’application. Participation active à la mise en place de l'architecture de la nouvelle
-							solution de la compagnie. Référence pour les questions de frontend, particulièrement ce qui concerne AngularJS et
-							Javascript.
-						</p>
+					<li class="category">
+						<p class="category-name">Langages connus</p>
+						<ul>
+							<li class="card-image">
+								<div class="image-container"><img src="img/competences/javascript.png" alt="javascript logo" /></div>
+								<p class="image-title">Javascript</p>
+							</li>
+							<li class="card-image">
+								<div class="image-container"><img src="img/competences/c-sharp.png" alt="C# logo" /></div>
+								<p class="image-title">C#</p>
+							</li>
+							<li class="card-image">
+								<div class="image-container"><img src="img/competences/html5.png" alt="HTML5 logo" /></div>
+								<p class="image-title">HTML5</p>
+							</li>
+							<li class="card-image">
+								<div class="image-container"><img src="img/competences/css3.png" alt="CSS3 logo" /></div>
+								<p class="image-title">CSS3</p>
+							</li>
+							<li class="card-image">
+								<div class="image-container"><img src="img/competences/less.png" alt="LESS logo" /></div>
+								<p class="image-title">LESS</p>
+							</li>
+							<li class="card-image">
+								<div class="image-container"><img src="img/competences/sql.png" alt="SQL logo" /></div>
+								<p class="image-title">SQL</p>
+							</li>
+							<li class="card-image">
+								<div class="image-container"><img src="img/competences/java.png" alt="Java logo" /></div>
+								<p class="image-title">Java</p>
+							</li>
+						</ul>
 					</li>
-					<li class="job">
-						<p class="title">Développeur Stagiaire</p>
-						<p class="employer">Vidéotron</p>
-						<p class="duration">2015 (10 semaines)</p>
-						<p class="description">Mise en place d’une interface pour un système de monitoring en utilisant des composantes Telerik et ASP.NET WebForm.
-						</p>
+					<li class="category">
+						<p class="category-name">Frameworks connus</p>
+						<ul>
+							<li class="card-image">
+								<div class="image-container"><img src="img/competences/angular.png" alt="AngularJS logo" /></div>
+								<p class="image-title">AngularJS</p>
+							</li>
+							<li class="card-image">
+								<div class="image-container"><img src="img/competences/jquery.png" alt="JQuery logo" /></div>
+								<p class="image-title">JQuery</p>
+							</li>
+							<li class="card-image">
+								<div class="image-container"><img src="img/competences/gulp.png" alt="Gulp logo" /></div>
+								<p class="image-title">Gulp</p>
+							</li>
+							<li class="card-image">
+								<div class="image-container"><img src="img/competences/asp-net.png" alt="ASP.NET logo" /></div>
+								<p class="image-title">ASP.NET</p>
+								<p class="image-detail">MVC, WebApi</p>
+							</li>
+						</ul>
 					</li>
-					<li class="job">
-						<p class="title">Spécialiste des ventes</p>
-						<p class="employer">Best Buy</p>
-						<p class="duration">2014 - 2015</p>
+					<li class="category">
+						<p class="category-name">Infonuagique</p>
+						<ul>
+							<li class="card-image">
+								<div class="image-container"><img src="img/competences/azure.png" alt="Azure logo" /></div>
+								<p class="image-title">Microsoft Azure</p>
+								<p class="image-detail">Web app, API app, Aplication Insights, Table Storage, Blob Storage, AAD B2C</p>
+							</li>
+						</ul>
+					</li>
+					<li class="category">
+						<p class="category-name">Environnement de travail</p>
+						<ul>
+							<li class="card-image">
+								<div class="image-container"><img src="img/competences/visual-studio.png" alt="Visual Studio logo" /></div>
+								<p class="image-title">Visual Studio</p>
+							</li>
+							<li class="card-image">
+								<div class="image-container"><img src="img/competences/vscode.png" alt="VS Code logo" /></div>
+								<p class="image-title">VS Code</p>
+							</li>
+							<li class="card-image">
+								<div class="image-container"><img src="img/competences/tfs.png" alt="TFS logo" /></div>
+								<p class="image-title">TFS</p>
+							</li>
+							<li class="card-image">
+								<div class="image-container"><img src="img/competences/github.png" alt="GitHub logo" /></div>
+								<p class="image-title">GitHub</p>
+							</li>
+							<li class="card-image">
+								<div class="image-container"><img src="img/competences/nodejs.png" alt="NodeJs logo" /></div>
+								<p class="image-title">NodeJs</p>
+							</li>
+							<li class="card-image">
+								<div class="image-container"><img src="img/competences/agile-scrum.png" alt="Agile Scrum logo" /></div>
+								<p class="image-title">Agile Scrum</p>
+							</li>
+							<li class="card-image">
+								<div class="image-container"><img src="img/competences/sql-management-studio.png" alt="SQL Management Studio logo" /></div>
+								<p class="image-title">SQL Management Studio</p>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</div>
 		</div>
-		<div class="section" id="scholarship">
-			<div class="section-content">
-				<h3 class="section-title">Formations</h3>
-				<ul>
-					<li class="school">
-						<p class="course">Diplôme en Techniques d'informatique de gestion</p>
-						<p class="establishment">Collège de Maisonneuve</p>
-						<p class="duration">2015</p>
-					</li>
-					<li class="school">
-						<p class="course">Diplôme d'études secondaires</p>
-						<p class="establishment">École P.G.-Ostiguy</p>
-						<p class="duration">2012</p>
-					</li>
-				</ul>
-			</div>
+	</section>
+	<section data-id-section="4">
+		<div class="card">
+			<h3>Démo responsive</h3>
 		</div>
-		<div class="section" id="contact">
-			<div class="section-content">
-				<h3 class="section-title">Pour me rejoindre</h3>
-				<div>
-					<p><a class="btn link " href="mailto:louis-david2@hotmail.com"><span>louis-david2@hotmail.com</span></a></p>
-					<p>438-395-5766</p>
-					<p><a class="btn link linkedin-link" href="https://ca.linkedin.com/in/louis-david-robillard-6436bb126" target="_blanck"><span>Profil LinkedIn</span></a></p>
+	</section>
+	<section data-id-section="5" id="contact">
+		<div class="card">
+			<h3>Contact</h3>
+			<div class="card-content">
+				<div class="contact-infos">
+					<p>Pour me contacter:</p>
+					<ul>
+						<li>
+							<a class="mail-link" href="mailto:louis-david2@hotmail.com">louis-david2@hotmail.com</a>
+						</li>
+						<li>
+							<a class="phone-link" href="tel:438-395-5766">438-395-5766</a>
+						</li>
+						<li>
+							<a class="linkedin-link" href="https://ca.linkedin.com/in/louis-david-robillard-6436bb126">Profil LinkedIn</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cv-download">
+					<p>Télécharger mon Curriculum Vitae</p>
+					<a class="btn blue" href="https://onedrive.live.com/download?cid=6D3D770094F09D01&resid=6D3D770094F09D01%212036&authkey=ABAlLKDN4e1UReg&em=2">
+						<span>Télécharger</span>
+					</a>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
+	</section>

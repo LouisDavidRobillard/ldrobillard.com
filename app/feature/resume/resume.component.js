@@ -19,11 +19,6 @@
 
     function ResumeController($element) {
         var ctrl = this;
-        ctrl.fullpageOptions = {
-            menu: '#menu',
-            anchors: ['section_1', 'section_2', 'section_3', 'section_4', 'section_5'],
-            lockAnchors: true
-        }
 
         ////////////////
         //

@@ -25,7 +25,7 @@ gulp.task('compress', function () {
         .pipe(concat('concat.js'))
         .pipe(gulp.dest('dist'))
         .pipe(rename('app.min.js'))
-        .pipe(uglify())
+        //.pipe(uglify())
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('dist'));
 });
