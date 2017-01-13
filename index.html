@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>LD Robillard</title>
 
@@ -21,38 +21,56 @@
 	<meta name="url" content="https://ldrobillard.com/">
 	<meta name="rating" content="General">
 
+	<link rel="shortcut icon" href="img/icons/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="img/icons/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="img/icons/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="img/icons/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="img/icons/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16.png">
+	<link rel="apple-touch-icon" href="img/icons/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/icons/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/icons/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/icons/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/icons/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/icons/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/icons/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/icons/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/icons/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="img/icons/favicon-144.png">
+	<meta name="msapplication-config" content="img/icons//browserconfig.xml">
+
+
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="vendor/jquery.fullpage.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-	<div>
-		<nav>
-			<button onclick="body.classList.toggle('nav-active')">
-				<span>Afficher le menu</span>
-				<span></span>
-				<span></span>
+	<div class="container">
+		<header>
+			<button class="toggle-nav" onclick="body.classList.toggle('nav-active')">
+				<span>Menu</span>
 			</button>
-			<ul>
-				<li><a href="/">Accueil</a></li>
-				<li><a href="/controls">Contrôles</a></li>
-			</ul>
-		</nav>
+			<h1 class="title">LD ROBILLARD</h1>
+			<nav>
+				<ul>
+					<li><a href="/">Accueil</a></li>
+					<li><a href="/controls">Contrôles</a></li>
+					<!--li><a href="#">Autre</a></li-->
+				</ul>
+			</nav>
+		</header>
 		<div id="main" ng-view></div>
-		<span class="overlay" onclick="document.body.classList.remove('nav-active')"></span>
+		<footer>
+			<p class="copyright">Copyright ©2017</p>
+		</footer>
 	</div>
 	<!-- Libraries -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-	<script type="text/javascript" src="vendor/jquery.fullpage.js"></script>
-
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
-
-	<script type="text/javascript" src="vendor\angular-fullpage.min.js"></script>
-
 
 	<!-- Page scripts -->
 	<script src="main.js"></script>
